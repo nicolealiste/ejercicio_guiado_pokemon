@@ -15,6 +15,7 @@ function Pokemon(nombre,color,poderDeAtaque){
 	};
 	this.atacar=function(pokemon){
 		pokemon.vida=pokemon.vida-this.poderDeAtaque;
+		return pokemon.vida;
 	}
 }
 const Pikachu= new Pokemon ("Pikachu","Amarillo",100);

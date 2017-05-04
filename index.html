@@ -6,17 +6,23 @@
 </head>
 <body>
 	<center>
-		<select name="select">
-		<option value="seleccionar" selected>Selecciona tu Pokemón</option>
-		  <option value="Pikachu">Pikachu</option> 
-		  <option value="Charmander">Charmander</option>
-		</select>
-		VS
-		<select name="select">
-		  <option value="seleccionar" selected>Selecciona tu Pokemón</option>
-		  <option value="Charmander">Charmander</option>
-		  <option value="Pikachu">Pikachu</option> 	  
-		</select>
+		<h1>BATALLA POKEMON</h1>
+		<img src="http://www.hdfondos.eu/pictures/2013/0306/1/pokemon-pikachu-charizard-pokemon-battle-4370x2648-wallpaper-590249.jpg" width="600" height="400">
+		<p>
+			<select name="select" id="1player">
+				<option value="seleccionar" selected>Selecciona tu Pokemón</option>
+				  <option value="Pikachu">Pikachu</option> 
+				  <option value="Charmander">Charmander</option>
+			</select>
+			VS
+			<select name="select" id="2player">
+				  <option value="seleccionar" selected>Selecciona tu Pokemón</option>
+				  <option value="Charmander">Charmander</option>
+				  <option value="Pikachu">Pikachu</option> 	  
+			</select>
+		</p>
+		<button onclick="figth()">Fight</button>
+		<div id="print"></div>	
 	</center>	
 </body>
 </html>
