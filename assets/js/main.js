@@ -18,8 +18,19 @@ function Pokemon(nombre,color,poderDeAtaque){
 		return pokemon.vida;
 	}
 }
-const Pikachu= new Pokemon ("Pikachu","Amarillo",100);
-const Charmander= new Pokemon ("Charmander", "Rojo",20);
+function figth(){
 
-Pikachu.atacar(Charmander);
-console.log(Charmander.vida);
+	var player1= document.getElementById('1player').value;
+	var player2= document.getElementById('2player').value;
+	var p1= new Pokemon (player1,"Amarillo",100);
+	var p2= new Pokemon (player2, "Rojo",20);
+	p1.atacar(p2);
+
+	var resFInal=document.getElementById('print');
+	var texto= (p1.nombre +" ataco a "+ p2.nombre + ".y "+ p2.nombre+ " tiene una vida de "+ p2.vida);
+	resFInal.innerHTML=texto;
+		
+
+};
+//Pikachu.atacar(Charmander);
+//console.log(Charmander.vida);
